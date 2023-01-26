@@ -17,7 +17,7 @@ stages:
 
     - task: ECRPushImage@1
       inputs:
-        awsCredentials: 'ecr_connection'
+        awsCredentials: 'aws-jenkins'
         regionName: $(AWS_REGION)
         imageSource: 'imagename'
         sourceImageName: $(DOCKER_REPOSITORY_NAME)
